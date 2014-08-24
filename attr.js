@@ -220,7 +220,7 @@ define("attr", !! this.getComputedStyle ? ["node"] : ["attr_fix"], function($) {
                     node.setAttribute(name, "");
                 }
                 node.removeAttribute(name);
-                // 确保bool属性的值为bool
+                // 确保bool属性的值为bool,test
                 if(node[name] === true) {
                     node[name] = false;
                     $.fixDefault(node, name, false);
